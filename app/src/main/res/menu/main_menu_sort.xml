@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_priority"
+            android:title="@string/menu_priority"
+            android:checked="true" />
+
+        <item
+            android:id="@+id/menu_alphabetical_a_z"
+            android:title="@string/menu_alphabetical_a_z" />
+
+        <item
+            android:id="@+id/menu_alphabetical_z_a"
+            android:title="@string/menu_alphabetical_z_a" />
+
+        <item
+            android:id="@+id/menu_created_newest_first"
+            android:title="@string/menu_created_newest_first" />
+
+        <item
+            android:id="@+id/menu_created_oldest_first"
+            android:title="@string/menu_created_oldest_first" />
+
+        <item
+            android:id="@+id/menu_reminder_newest_first"
+            android:title="@string/menu_reminder_newest_first" />
+
+        <item
+            android:id="@+id/menu_reminder_oldest_first"
+            android:title="@string/menu_reminder_oldest_first" />
+    </group>
+</menu>

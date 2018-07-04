@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <PreferenceCategory android:title="@string/application_settings">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_dark_theme"
+            android:summary="@string/summary_dark_theme"
+            android:title="@string/title_dark_theme" />
+
+
+        <Preference
+            android:key="@string/pref_key_theme"
+            android:summary="@string/app_theme"
+            android:title="@string/app_theme_title" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notifications">
+
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:key="@string/pref_key_notifications_ringtone"
+            android:ringtoneType="notification"
+            android:summary="@string/summary_choose_ringtone"
+            android:title="@string/pref_title_ringtone" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/pref_key_vibrate"
+            android:summary="@string/summary_vibrate"
+            android:title="@string/title_vibrate" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:key="@string/pref_key_version"
+            android:summary="@string/app_version"
+            android:title="@string/title_version" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
